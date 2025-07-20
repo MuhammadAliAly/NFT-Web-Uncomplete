@@ -1,0 +1,323 @@
+*{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --transition: all .4s ease;
+}
+
+#small-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    #small-nav{
+        display: none;
+    }
+}
+
+body{
+   font-family: "poppins", sans-serif;
+   background-color: initial; 
+   overflow-x: hidden;
+}
+
+nav{
+    border-bottom: 1px solid white;
+    backdrop-filter: blur(15px);
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+header ul a{
+    color: white;
+    text-decoration: none;
+}
+
+header ul a:hover{
+    background: -webkit-linear-gradient(#AB2FFE,#40AFFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.02rem;
+    font-weight: 700;
+}
+
+.bton{
+    color: white;
+    width: 100px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: linear-gradient(to left,#1F1539,#1F1539),
+    linear-gradient(to right, #AB2FFE,#40AFFD);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.bton:hover{
+    color: white;
+    background: linear-gradient(to right, #AB2FFE,#40AFFD);
+    border: 1px solid transparent;
+    
+}
+
+    /* resbox */
+
+header{
+    position: relative;
+    z-index: 10000;
+}
+
+.resbox{
+    position: absolute;
+    padding: 6000px 5px 50x 10px ;
+    right: -100%;
+    width: 100%;
+    max-width: 600px;
+    min-height: 100vh;
+    background-color: #1F1539;
+    z-index: 100;
+    transition: var(--transition);
+}
+
+.pri-btn{
+    padding: 8px;
+    font-size: 1.3rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pri-btn:hover{
+    background: linear-gradient(#AB2FFE,#40AFFD);
+    border-color: transparent;
+}
+
+.resbox #close-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+    /* banner */
+
+.gradie{
+    background: -webkit-linear-gradient(#E6B9FF,#9E89FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 63px;
+    font-weight: 300;
+}
+
+
+
+.play-btn{
+    background: -webkit-linear-gradient(#AB2FFE,#40AFFD);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;;
+    font-size: 49px;
+}
+
+.left-text{
+    width: 50%;
+}
+
+.right-img-box{
+    width: 44%;
+}
+
+.right-img{
+    width: 100%;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+
+.top-creaters .ball{ 
+    right: 54.5%;
+    top: -7px;
+}
+
+.ball{
+    position: absolute;
+    padding: 35px;
+    border-radius: 50%;
+    background: linear-gradient(#6147F8,#BC5EFF);
+    z-index: -1;
+}
+
+.map{
+    width: 100%;
+}
+
+.collec-btn .bton{
+    width: auto;
+}
+
+.collect-img{
+    width: 54px;
+}
+
+.collect-head, .collect-head1{
+    margin-bottom: 0;    
+}
+
+/* tooltip */
+.collectors {
+    position: relative;
+    visibility: hidden;
+}
+  
+.collectors .collector-detail {
+    width: auto;
+    background-color: 312353;
+    color: #fff;
+    border-radius: 6px;
+    border: 4px solid #40AFFD;
+    border-radius: 8px;
+    position: absolute;
+    top: -640px;
+    left: 45px  ;
+}
+  
+.collectors .collector-detail::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 74%;
+    margin-left: -5px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #40AFFD transparent transparent transparent;
+}
+
+/* tooltip */
+
+.Latest-NFT{
+    gap: 100px;
+    padding: 180px 95px;
+}
+
+.latest-NFT-collec .ball{
+    left: 10px;
+    top: -7px;
+}
+
+.latest-NFT-collec p{
+    width: 90%;
+}
+
+.NFT-pic{
+    position: relative;
+    height: 205px;
+    width: 190px;
+}
+
+.NFT-pic img{
+    position: absolute;
+    left: 20px;
+    gap: 50px;
+    
+}
+
+.box{
+    padding: 40px 110px;
+    border: .5px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.box img{
+    width: 10   0%;
+}
+
+.why-choose-us{
+    border-right: 3px solid #40AFFD;
+    border-top: 3px solid #AB2FFE;
+    border-bottom: 3px solid #40AFFD;
+    border-top-right-radius: 265px;
+    border-end-end-radius: 265px;
+    padding: 70px 60px 105px;
+    margin-right: 95px;
+    background-color: #0000009f;
+    gap: 150px;
+}
+
+.data{
+    position: absolute;
+    left: 375px;
+}
+
+.fast{
+    position: absolute;
+    left: 75px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .Latest-NFT{
+        gap: 50px;
+        padding: 110px 0px 150px;
+    } 
+}
+@media screen and (min-width: 768px) {
+    .resbox{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gradie{
+        font-size: 48px;
+        font-weight: 300;
+    }
+    /* .left-text p{
+        font-size: 12px;
+    } */
+}
+
+
+@media screen and (max-width: 768px) {
+    .left-text{
+        width: 92%;
+        margin-top: 20px;
+        z-index: 10;
+        margin-bottom: 130px;
+    }
+    .right-img-box{
+        position: absolute;
+        top: -1%;
+        width: 75%;
+        z-index: -1;
+        filter: opacity(.2);
+    }
+    .right-img{
+        filter: grayscale(.5);
+    }
+    .latest-NFT-collec{
+        padding-left: 20% !important;
+    }
+    .latest-NFT-collec .ball{
+        left: 15%;
+        top: -7px;
+    }
+    .Latest-NFT{
+        gap: 15px;
+    } 
+}
+
+
+
