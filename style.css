@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 768px) {
     #small-nav{
-        display: none;
+        display: none !important;
     }
 }
 
@@ -32,6 +32,18 @@ nav{
     width: 100%;
     position: fixed;
     z-index: 5;
+}
+
+nav .vector{
+    background: url(Vector.png);
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+}
+
+nav .vector:hover{
+    background: url(vectorNew.png);
+    background-repeat: no-repeat;
 }
 
 header ul a{
@@ -232,28 +244,67 @@ p{
     
 }
 
-.box{
-    padding: 40px 110px;
-    border: .5px solid white;
-    border-radius: 20px;
-    backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.box img{
-    width: 10   0%;
-}
-
 .why-choose-us{
     border-right: 3px solid #40AFFD;
     border-top: 3px solid #AB2FFE;
     border-bottom: 3px solid #40AFFD;
-    border-top-right-radius: 265px;
-    border-end-end-radius: 265px;
-    padding: 70px 60px 105px;
+    border-top-right-radius: 295px;
+    border-end-end-radius: 295px;
+    padding: 9% 6%;
     margin-right: 95px;
     background-color: #0000009f;
-    gap: 150px;
+}
+
+.box{
+    padding: 40px 110px;
+    border: .5px solid rgba(255, 255, 255, 0.295);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.041);
+    z-index: 1;
+    width: auto;
+}
+
+.right, .left{
+    position: relative;
+}
+
+.light-ball{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    filter: blur(20px);
+    z-index: 0;
+}
+
+.light-ball1{
+    position: absolute;
+    background-color: #FFB413;
+    left: 58px;
+    top: -1px;
+    /* box-shadow: 0 0 30px 5px #FFB413; */
+}
+
+.light-ball2{
+    position: absolute;
+    background-color: #FF5A13;
+    left: 70%;
+    top: 90px;
+}
+
+.light-ball3{
+    position: absolute;
+    background-color: #2FB8EB;
+    left: 20%;
+    
+}
+
+.light-ball4{
+    position: absolute;
+    background-color: #00E3A5;
+    right: 0;
+    top: 50px;
 }
 
 .data{
@@ -272,7 +323,37 @@ p{
         gap: 50px;
         padding: 110px 0px 150px;
     } 
+
+    .why-choose-us{
+    padding: 7% 3%;
+    margin-right: 55px;
 }
+}
+
+@media screen and (max-width: 1060px) {
+    .why-choose-us{
+    padding: 3% 3%;
+    margin-right: 55px;
+}
+}
+
+@media screen and (max-width: 992px) {
+    .why-choose-us{
+    border-top-right-radius: 500px;
+    border-end-end-radius: 500px;
+    height: 750px;
+    padding: 6% 5%;
+    margin-right: 45px;
+    gap: 40px;
+}
+    .light-ball2{
+        left: 50%;
+    }
+    .light-ball4{
+        left: 60%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .resbox{
         display: none;
@@ -317,6 +398,45 @@ p{
     .Latest-NFT{
         gap: 15px;
     } 
+    
+    .light-ball2{
+        left: 65%;
+    }
+    .light-ball4{
+        left: 77%;
+        top: 80px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .why-choose-us p{
+        font-size: 15px !important;
+        padding: 1% 0% 0%;
+        gap: 0;
+    }
+
+    .box{
+    padding: 25px 70px;
+    }
+
+    .data{
+    position: absolute;
+    left: 220px;
+    }
+
+    .fast{
+        position: absolute;
+        left: 0;
+    }
+
+    .light-ball2{
+        left: 65%;
+        top: 65px;
+    }
+    .light-ball4{
+        left: 68%;
+        top: 50px;
+    }
 }
 
 
