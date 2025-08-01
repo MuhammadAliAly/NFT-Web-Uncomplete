@@ -8,6 +8,26 @@
     --transition: all .4s ease;
 }
 
+.glow-ball{
+    position: absolute;
+    width: 70%;
+    height: 120%;
+    /* top: -50%;
+    left: -40%; */
+    filter: blur(80px);
+    /* background: radial-gradient(#FB03F5, #40AFFD); */
+    background-image: radial-gradient(circle,
+    red 0%,
+    red 33%,
+    yellow 33%,
+    yellow 66%,
+    green 66%,
+    green 100%);
+}
+    z-index: -1;
+    border-radius: 50%;
+}
+
 #small-nav{
     display: flex;
     justify-content: space-between;
@@ -283,7 +303,6 @@ p{
     background-color: #FFB413;
     left: 58px;
     top: -1px;
-    /* box-shadow: 0 0 30px 5px #FFB413; */
 }
 
 .light-ball2{
@@ -317,7 +336,38 @@ p{
     left: 75px;
 }
 
+    /* cerate and sell NFT */
+
+.Create-and-sell{
+    margin: 12% 0 5%;
+    color: white;
+    border-bottom: 1px solid #AB2FFE;
+    padding-bottom: 10%;
+    border-radius: 40%;
+}
+
+.Create-and-sell .ball{
+    right: 65%;
+    top: -8px;
+}
+
+/* .create-sell-container{
+    gap: 7%;
+    padding: 20px 6%;
+} */
+
+.create-sell-container p{
+    width: 75%;
+}
+
+.create-sell-container h5{
+    white-space: nowrap;
+}
+
+
+
 /* Responsive */
+
 @media screen and (max-width: 1200px) {
     .Latest-NFT{
         gap: 50px;
@@ -352,45 +402,37 @@ p{
     .light-ball4{
         left: 60%;
     }
-}
 
-@media screen and (min-width: 768px) {
-    .resbox{
-        display: none;
+    .create-sell-container p{
+    width: 60%;
     }
-}
 
-@media screen and (max-width: 992px) {
     .gradie{
         font-size: 48px;
         font-weight: 300;
     }
-    /* .left-text p{
-        font-size: 12px;
-    } */
 }
-
-
-@media screen and (max-width: 768px) {
-    .left-text{
-        width: 92%;
-        margin-top: 20px;
-        z-index: 10;
-        margin-bottom: 130px;
-    }
-    .right-img-box{
-        position: absolute;
-        top: -1%;
-        width: 75%;
-        z-index: -1;
-        filter: opacity(.2);
-    }
-    .right-img{
-        filter: grayscale(.5);
-    }
-    .latest-NFT-collec{
-        padding-left: 20% !important;
-    }
+    
+    @media screen and (max-width: 768px) {
+        .left-text{
+            width: 92%;
+            margin-top: 20px;
+            z-index: 10;
+            margin-bottom: 130px;
+        }
+        .right-img-box{
+            position: absolute;
+            top: -1%;
+            width: 75%;
+            z-index: -1;
+            filter: opacity(.2);
+        }
+        .right-img{
+            filter: grayscale(.5);
+        }
+        .latest-NFT-collec{
+            padding-left: 20% !important;
+        }
     .latest-NFT-collec .ball{
         left: 15%;
         top: -7px;
@@ -406,6 +448,11 @@ p{
         left: 77%;
         top: 80px;
     }
+    
+    .Create-and-sell .ball{
+        right: 70%;
+        top: -8px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -414,21 +461,21 @@ p{
         padding: 1% 0% 0%;
         gap: 0;
     }
-
+    
     .box{
-    padding: 25px 70px;
+        padding: 25px 70px;
     }
-
+    
     .data{
-    position: absolute;
-    left: 220px;
+        position: absolute;
+        left: 220px;
     }
-
+    
     .fast{
         position: absolute;
         left: 0;
     }
-
+    
     .light-ball2{
         left: 65%;
         top: 65px;
@@ -440,4 +487,10 @@ p{
 }
 
 
+/* min  */
 
+@media screen and (min-width: 768px) {
+    .resbox{
+        display: none;
+    }
+}
